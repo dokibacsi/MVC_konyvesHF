@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -22,6 +27,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  grid-area: szekreny;
 }
 
 .konyv{
@@ -32,4 +38,42 @@
 
 .adatok{
   background-color: white;
+}
+
+nav{
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+}
+
+ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  margin: auto;
+}
+
+li{
+  width: 50%;
+  list-style-type: none;
+}
+
+article{
+  display: grid;
+  grid-template-areas: "kosar szekreny";
+}
+
+.kosar{
+  background-color: #282c34;
+  height: 100%;
+  grid-area: kosar;
+}
+
+.hozzaadGomb{
+  margin: auto;
+  border: 2px solid red;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 50%;
+  background-color: aliceblue;
 }

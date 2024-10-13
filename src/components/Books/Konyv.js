@@ -8,6 +8,7 @@ export default function Konyv(props) {
                 <h3>Cím: {props.konyv.cim}</h3>
                 <h3>Ár: {props.konyv.ar}</h3>
             </div>
+            <div className="hozzaadGomb">Hozzáad</div>
         </div>
     )
 }

@@ -21,3 +21,6 @@ export const konyvesLista =
             ar: "9000"
         },
     ]
+
+export const navList = ["publikus felület", "Admin felület"]
+export let kosarTartalom = []
